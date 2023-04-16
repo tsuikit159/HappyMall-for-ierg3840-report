@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import Navbar from "../components/Navbar/index";
-import { LandingSection } from "../components/landing/index";
-import Products from "../components/products/index";
+import Navbar from "../Components/Navbar/index";
+import { LandingSection } from "../Components/landing/index";
+import Products from "../Components/products/index";
 import { Features } from "@/Components/features/index";
 import data from "../products.json"
 import { Footer } from "@/Components/footer/index";

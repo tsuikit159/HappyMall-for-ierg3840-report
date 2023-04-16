@@ -2,8 +2,8 @@ import React from 'react'
 import axios from "axios"
 import { useRecoilState } from 'recoil'
 import { cartState } from '../atoms/cartState.js'
-import CartList from '../components/shoppingCart/index.jsx'
-import Navbar from "../components/Navbar"
+import CartList from '../Components/shoppingCart/index.jsx'
+import Navbar from "../Components/Navbar"
 import { Footer } from '@/Components/footer/index.jsx'
 const Cart = () => {
 
