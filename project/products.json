@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1 ,
+        "name": "Logitech MK270 Wireless Keyboard and Mouse Combo",
+        "imageSrc": "assets/keyboard.png",
+        "quantity":1
+      },
+      {
+        "id": 2 ,
+        "name": "Razer BlackWidow Chroma V2 Mechanical Gaming Keyboard ",
+        "imageSrc": "assets/keyboard1.png",
+        "quantity":1
+      },
+      {
+        "id": 3 ,
+        "name": "Apple Magic Keyboard ",
+        "imageSrc": "assets/keyboard2.png",
+        "quantity":1
+      },
+      {
+        "id": 4 ,
+        "name": "Apple Magic Keyboard ",
+        "imageSrc": "assets/keyboard2.png",
+        "quantity":1
+      },
+      {
+        "id": 5 ,
+        "name": "Corsair K95 RGB Platinum XT Mechanical Gaming Keyboard ",
+        "imageSrc": "assets/keyboard3.png",
+        "quantity":1
+      },
+      {
+        "id": 6 ,
+        "name": "Apple Magic Keyboard ",
+        "imageSrc": "assets/keyboard4.png",
+        "quantity":1
+      }
+]
