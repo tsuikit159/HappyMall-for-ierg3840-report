@@ -12,7 +12,7 @@ const LandingSection = () => {
         Happy mall, gives your joy way more.
         </h2>
         <div className="flex flex-col gap-4">
-          <Link href ="/" LandingSection>
+          <Link href ="/">
           <button className="px-4 py-2 bg-cyan-500 text-white rounded-md">
             Keyboards
           </button>
