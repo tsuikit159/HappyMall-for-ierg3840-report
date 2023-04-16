@@ -2,12 +2,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import Navbar from "../components/Navbar";
-import { LandingSection } from "../components/landing";
-import Products from "../components/products";
-import { Features } from "@/Components/features";
+import Navbar from "../components/Navbar/index";
+import { LandingSection } from "../components/landing/index";
+import Products from "../components/products/index";
+import { Features } from "@/Components/features/index";
 import data from "../products.json"
-import { Footer } from "@/Components/footer";
+import { Footer } from "@/Components/footer/index";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
