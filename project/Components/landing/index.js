@@ -1,5 +1,5 @@
 import KeyboardImg from "../../assets/keyboard-cover.png";
-
+import Link from "next/link";
 const LandingSection = () => {
   return (
     <section
