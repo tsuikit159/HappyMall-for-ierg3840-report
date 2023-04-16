@@ -18,12 +18,11 @@ const LandingSection = () => {
               coorperate and design with the most user-oriented product.
             </p>
             <div className="flex flex-col md:flex-row">
-              <a
-                href="/"
-                className="bg-cyan-500 hover:bg-black-600 text-white py-2 px-3 rounded-md font-bold text-lg mr-0 md:mr-4 mb-4 md:mb-0 transition duration-300 ease-in-out"
-              >
+            <button className="bg-cyan-500 hover:bg-black-600 text-white py-2 px-3 rounded-md font-bold text-lg mr-0 md:mr-4 mb-4 md:mb-0 transition duration-300 ease-in-out">
+                <Link href="/">
                 check our page
-              </a>
+                </Link>
+                </button>
               
             </div>
           </div>
