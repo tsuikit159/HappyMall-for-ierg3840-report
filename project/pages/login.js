@@ -12,6 +12,7 @@ import Input from "@/Components/form/input";
 import InputErrorMessage from "@/Components/utils/inputerrormsg";
 import GoogleSigninButton from "@/Components/form/googlesigninbox";
 import Button from "@/Components/form/Button";
+import toast from 'react-hot-toast';
 
 const login = () => {
   const router = useRouter();
@@ -37,9 +38,13 @@ const login = () => {
       });
       if (status?.error) throw Error(status?.error + ' error is here');
 
-      if (status?.ok) router.push("/");
+      if (status?.ok) 
+      {
+        router.push("/");
+        toast(`welcome user !`)
+      }
       setLoading(false);
-      console.log('successful login');
+      
     } catch (error) {
       setError(error?.message);
       setLoading(false);

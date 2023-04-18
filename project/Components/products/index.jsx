@@ -71,6 +71,7 @@ const products = [
     quantity:1,
   },
 ];
+const initialState = [];
 
 const ProductCard = ({ product }) => {
   const [cartItem, setCartItem] = useRecoilState(cartState)
@@ -79,10 +80,13 @@ const ProductCard = ({ product }) => {
 
     if (cartItem.findIndex(pro => pro.id === products.id) === -1) {
         setCartItem(prevState => [...prevState, product])
+        localStorage.setItem(product, JSON.stringify(product))
     } else {
         setCartItem(prevState => {
             return prevState.map((item) => {
                 return item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+                autosave.push(product)
+                localStorage.setItem(autosave, JSON.stringify(autosave))
             })
         })
     }
