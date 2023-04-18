@@ -93,11 +93,11 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col cursor-pointer">
-      <div className="w-full aspect-w-1 aspect-h-1">
+      <div className="w-full aspect-w-1 aspect-h-1 hover:scale-150 ease-in duration-500">
         <img
           src={product.imageSrc}
           alt={product.name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
         />
       </div>
       <div className="p-4 flex-grow">

@@ -20,7 +20,7 @@ const LandingSection = () => {
             <div className="flex flex-col md:flex-row">
             <button className="bg-cyan-500 hover:bg-black-600 text-white py-2 px-3 rounded-md font-bold text-lg mr-0 md:mr-4 mb-4 md:mb-0 transition duration-300 ease-in-out">
                 <Link href="/">
-                check our page
+                Login to buy our keyboard!
                 </Link>
                 </button>
               

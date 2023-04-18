@@ -9,6 +9,7 @@ import { Features } from "@/Components/features/index";
 import data from "../products.json"
 import { Footer } from "@/Components/footer/index";
 const inter = Inter({ subsets: ["latin"] });
+ 
 
 export default function Home() {
   return (
