@@ -13,7 +13,7 @@ const GoogleSigninButton = () => {
   return (
     <button
       onClick={handleGoogleSignin}
-      className="w-full text-gray-900 focus:ring-2 border focus:ring-primary-600 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+      className="w-full text-white-900 focus:ring-2  border focus:ring-primary-600 font-medium rounded-lg shadow-md text-sm px-5 py-2.5 text-center"
       type="button"
     >
       Sign In with Google
