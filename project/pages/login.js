@@ -14,7 +14,7 @@ import GoogleSigninButton from "@/Components/form/googlesigninbox";
 import Button from "@/Components/form/Button";
 import toast from 'react-hot-toast';
 
-const login = () => {
+const Login = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -136,7 +136,7 @@ const login = () => {
     </>
   );
 };
-export default login;
+export default Login;
 
 export const getServerSideProps = async (context) => {
   const session = await getSession({ req: context.req });

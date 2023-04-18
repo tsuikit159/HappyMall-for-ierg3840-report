@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 import InputWithLabel from "@/Components/form/inputwithlabel";
 import InputErrorMessage from "@/Components/utils/inputerrormsg";
 import CheckInput from "@/Components/form/checkinput";
-const signup = () => {
+const Signup = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -175,7 +175,7 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;
 
 export async function getServerSideProps({ req }) {
   const session = await getSession({ req });
