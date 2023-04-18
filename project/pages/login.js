@@ -12,7 +12,7 @@ import Input from "@/Components/form/input";
 import InputErrorMessage from "@/Components/utils/inputerrormsg";
 import GoogleSigninButton from "@/Components/form/googlesigninbox";
 import Button from "@/Components/form/Button";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
 const Login = () => {
   const router = useRouter();
@@ -36,7 +36,7 @@ const Login = () => {
         password: values.password,
         callbackUrl: "/",
       });
-      if (status?.error) throw Error(status?.error + ' error is here');
+      if (status?.error) throw Error(status?.error );
 
       if (status?.ok) 
       {
@@ -121,7 +121,7 @@ const Login = () => {
               <GoogleSigninButton />
 
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                <span className="mr-1"> Don't have an account?</span>
+                <span className="mr-1"> Do not have an account?</span>
                 <Link
                   href="/signup"
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
