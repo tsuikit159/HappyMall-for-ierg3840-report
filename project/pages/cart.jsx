@@ -47,9 +47,9 @@ const Cart = () => {
                 {cartItem.length > 0 && (<div className='max-w-[800px] mx-auto mt-4'>
                     <h2 className='text-white text-right text-3xl font-bold'>Total: ${totalPrice()}</h2>
                     <button
-                        className='text-right text-black py-4 px-12 mt-4 block mx-auto hover:bg-blue-800 hover:text-white' onClick={createCheckoutSession}>Checkout</button>
+                        className='text-right text-black py-4 px-12 mt-4 rounded-lg shadow-md mx-auto hover:bg-blue-800 hover:text-white' onClick={createCheckoutSession}>Checkout</button>
                 <button
-                        className='text-right text-black py-4 px-12 mt-4 block mx-auto hover:bg-blue-800 hover:text-white' onClick={reset}>reset</button>
+                        className='text-right text-black py-4 px-12 mt-4 rounded-lg shadow-md mx-auto hover:bg-blue-800 hover:text-white' onClick={reset}>reset</button>
                 </div>)}
 
 
