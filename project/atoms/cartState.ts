@@ -1,20 +1,6 @@
 import {atom ,useSetRecoilState} from "recoil"
 import { AtomEffect } from "recoil"
 import { recoilPersist } from "recoil-persist";
-import { parseCookies, setCookie, destroyCookie } from "nookies";
-const cookies = parseCookies();
-const localStorageEffect = (key) => ({setSelf, onSet}) => {
-    const savedValue = cookies[key]
-    if (savedValue != null) {
-      setSelf(JSON.parse(savedValue));
-    }
-  
-    onSet((newValue, _, isReset) => {
-      isReset
-        ? destroyCookie(null, key)
-        : setCookie(null, key, JSON.stringify(newValue));
-    });
-  };
 
 
 
