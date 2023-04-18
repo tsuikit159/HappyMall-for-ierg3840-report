@@ -13,7 +13,9 @@ import InputErrorMessage from "@/Components/utils/inputerrormsg";
 import GoogleSigninButton from "@/Components/form/googlesigninbox";
 import Button from "@/Components/form/Button";
 import toast from "react-hot-toast";
-
+import Logo from "../assets/Logo.png";
+import { Footer } from "@/Components/footer";
+import Navbar from "@/Components/Navbar";
 const Login = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
@@ -41,7 +43,7 @@ const Login = () => {
       if (status?.ok) 
       {
         router.push("/");
-        toast(`welcome user !`)
+        toast("welcome user !")
       }
       setLoading(false);
       
@@ -53,19 +55,17 @@ const Login = () => {
 
   return (
     <>
+    <Navbar/> 
       <Head>
         <title>Login your account</title>
       </Head>
 
-      <section className="bg-gray-50 py-12 dark:bg-gray-900">
+      <section className="bg-gray-50 py-3 dark:bg-blue-400">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto">
           <div className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
             <span className="mr-2">Login to</span>
-            <img
-              className="w-8 h-8 mr-2"
-              src="https://cdn-icons-png.flaticon.com/512/1372/1372789.png"
-              alt="logo"
-            />
+            
+            <img src={Logo.src} className="App-logo w-8 h-8 mr-2 rounded " alt="logo"/>
             <span className="text-red-400 font-bold">H</span>
             <span className="text-primary-700">appy</span>
             
@@ -133,6 +133,7 @@ const Login = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
