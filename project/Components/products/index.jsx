@@ -62,12 +62,12 @@ const products = [
   },
   {
     id: 6,
-    name: "Keyboard 6",
+    name: "RK61 Wireless Mechanical Keyboard Bluetooth 61 Key Wired PBT Key Cap Mini",
     imageSrc: Keyboard4Img.src,
     rating: 4.5,
     numReviews: 7,
     price: 899.0,
-    description:"",
+    description:"RK61 Wireless Mechanical Keyboard Bluetooth 61 Key Portable Office Notebook Home Mac E-Sports Games Wired PBT Key Cap Mini",
     quantity:1,
   },
 ];

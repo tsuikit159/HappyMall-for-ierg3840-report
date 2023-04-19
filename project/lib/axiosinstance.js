@@ -5,7 +5,7 @@ export function domain_url() {
   {
     return "https://real-ierg3840-project-submit.vercel.app/"
   }
-  else if (process.env.NODE_ENV == test)
+  else if (process.env.NODE_ENV == "test")
    return "http://localhost:3000"
    else
    {
