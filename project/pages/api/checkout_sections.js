@@ -1,3 +1,4 @@
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
@@ -24,7 +25,9 @@ export default async function handler(req, res) {
         mode: 'payment',
         success_url: `${req.headers.origin}/success`,
         cancel_url: `${req.headers.origin}/`,
-      });
+      })
+      
+      ;
       res.json({"sessionURL": session.url});
     } catch (err) {
       console.log(err);

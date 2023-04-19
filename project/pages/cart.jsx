@@ -8,12 +8,14 @@ import { Footer } from '@/Components/footer/index.jsx'
 import { getSession } from "next-auth/react";
 import { useEffect } from 'react'
 import { useSsrComplectedState } from '../atoms/cartState.ts'
-const Cart = () => {
 
+
+const Cart = () => {
+    
     const resetSearch = useResetRecoilState(cartState)
-    const reset = () => {
+    function reset() {
         resetSearch();
-    };
+    }
     const [cartItem, setCartItem] = useRecoilState(cartState)
     const setSsrCompleted = useSsrComplectedState()
     
@@ -25,13 +27,17 @@ const Cart = () => {
     }
 
     const createCheckoutSession = async () => {
-
+        
         axios.post('api/checkout_sections', { cartItem })
             .then(res => {
                 console.log(res)
                 window.location = res.data.sessionURL
             })
+            .then(res => {
+                reset()
+            })
             .catch(err => console.log(err))
+            
     }
 
     return (
