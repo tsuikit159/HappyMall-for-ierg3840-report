@@ -1,8 +1,16 @@
 import axios from "axios";
 
 export function domain_url() {
-  return "http://localhost:3000"||"https://real-ierg3840-project-submit.vercel.app/"||
-  "https://real-ierg3840-project-submit-git-main-tsuikit159.vercel.app/"
+  if (process.env.NODE_ENV == "production")
+  {
+    return "https://real-ierg3840-project-submit.vercel.app/"
+  }
+  else if (process.env.NODE_ENV == test)
+   return "http://localhost:3000"
+   else
+   {
+    return "https://real-ierg3840-project-submit-git-main-tsuikit159.vercel.app/"
+  }
     
 }
 
