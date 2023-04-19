@@ -76,7 +76,7 @@ const Login = () => {
               {error && (
                 <p className="text-red-500 flex items-center gap-x-2">
                   
-                  <span>{error}</span>
+                  <span>{"wrong email/password"}</span>
                 </p>
               )}
               <form
